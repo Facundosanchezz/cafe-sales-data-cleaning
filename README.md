@@ -34,11 +34,26 @@ The cleaning process includes:
 
 ## Results
 
+## Results
+
 - Total transactions: 10,000
-- Documented corrections: 1,951
+- Documented value recoveries: 1,951
+- Documented placeholder normalizations: 340
+- Total audited transformations: 2,291
 - Numerically complete transactions: 9,974
 - Numerical completeness: 99.74%
-- Automated tests: 6
+- Automated tests passing: 13
+
+## Reproducibility
+
+The automated Quantity recovery function reproduced
+441 of 456 previously documented recoveries.
+
+All 441 recovered values matched the original audit.
+
+The remaining 15 recoveries depend on other cleaning
+steps that are not yet integrated into the pipeline.
+
 
 ## Remaining Missing Values
 
