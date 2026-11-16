@@ -21,18 +21,18 @@ def preparar_dataframe():
         ])
     })
 
-
 def leer_csv(ruta):
     return pd.read_csv(
         ruta,
         dtype={
-            "Transaction ID": "object",
+            "Transaction ID": "str",
             "Item": "string",
             "Payment Method": "string",
             "Location": "string"
         },
         parse_dates=["Transaction Date"]
     )
+
 
 
 def test_exportacion_conserva_datos(tmp_path):
